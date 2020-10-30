@@ -1,5 +1,11 @@
 # Lobia - CSS framework
 
+```
+A beautiful and responsive css framework. Made with ❤️.
+```
+
+
+
 ## Npm Commands
 Command | Description
 --- | ---
