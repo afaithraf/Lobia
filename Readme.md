@@ -1,7 +1,8 @@
 # Lobia - CSS framework
 
+A beautiful and responsive css framework. 
 ```
-A beautiful and responsive css framework. Made with ❤️.
+Made with ❤️
 ```
 
 
