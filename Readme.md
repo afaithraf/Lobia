@@ -1,4 +1,4 @@
-# Lobia - CSS framework
+# Lobia - CSS framework (just started developement)
 
 A beautiful and responsive css framework. 
 ```
