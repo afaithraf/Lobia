@@ -1,0 +1,63 @@
+@each $name,
+$button in $buttons {
+    $btn-bg-color: map-get($button, bg-color);
+    $btn-color: map-get($button, color);
+
+    .btn-#{$name} {
+        background-color: $btn-bg-color;
+        border-color: $btn-bg-color;
+        color: $btn-color;
+
+        @if(has-key($button, bg)) {
+            background: map-get($button, bg);
+        }
+
+        &:hover,
+        &:focus {
+            background: darken($btn-bg-color, 10%);
+            color: darken($btn-color, 1%);
+        }
+
+        &:active {
+            background: darken($btn-bg-color, 20%);
+        }
+    }
+
+}
+
+
+.round-btn {
+    border-radius: 50%;
+    width: 3.2em;
+    height: 3.2em;
+    padding: 0;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+    &.badge::after {
+        content: attr(data-count) " ";
+        height: 2em;
+        width: 2em;
+        letter-spacing: .02em;
+        background-color: map-get($status, danger);
+        border-radius: 50%;
+        position: absolute;
+        bottom: -.5em;
+        right: -.4em;
+        font-size: .8em;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #ffffff;
+    }
+
+    @each $name,
+    $color in $status {
+        &.badge-#{$name}::after {
+            background-color: $color;
+        }
+    }
+
+}

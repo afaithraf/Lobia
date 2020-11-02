@@ -1,0 +1,21 @@
+
+.r{
+    border-radius: $border-radius;
+}
+.rtl {
+    border-top-left-radius: $border-radius;
+    border-top-right-radius: $border-radius;
+}
+.rtr {
+    border-bottom-left-radius: $border-radius;
+    border-bottom-right-radius: $border-radius;
+}
+.rbl {
+    border-top-left-radius: $border-radius;
+    border-bottom-left-radius: $border-radius;
+}
+.rbr {
+    border-top-right-radius: $border-radius;
+    border-bottom-right-radius: $border-radius;
+}
+

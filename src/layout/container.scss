@@ -1,0 +1,51 @@
+.con {
+    padding: 5px 15px 5px 15px;
+    margin : auto;
+
+    @media (max-width: map-get($breakpoints, sm)) {
+        width: 95vw;
+    }
+
+    @media (min-width: map-get($breakpoints, md)) {
+        width: map-get($breakpoints, md);
+    }
+
+    @media (min-width: map-get($breakpoints, lg)) {
+        width: map-get($breakpoints, lg);
+    }
+
+    @media (min-width: map-get($breakpoints, xl)) {
+        width: map-get($breakpoints, xl);
+    }
+
+    @media (min-width: map-get($breakpoints, xxl)) {
+        width: map-get($breakpoints, xxl);
+    }
+
+}
+
+.fluid{
+    width: 100%;
+}
+
+.con-sm {
+    padding: 5px 15px 5px 15px;
+    margin : auto;
+
+    @media (min-width: map-get($breakpoints, md)) {
+        width: map-get($breakpoints, md)*0.8;
+    }
+
+    @media (min-width: map-get($breakpoints, lg)) {
+        width: map-get($breakpoints, lg)*0.8;
+    }
+
+    @media (min-width: map-get($breakpoints, xl)) {
+        width: map-get($breakpoints, xl)*0.8;
+    }
+
+    @media (min-width: map-get($breakpoints, xxl)) {
+        width: map-get($breakpoints, xxl)*0.8;
+    }
+}
+

@@ -1,0 +1,12 @@
+@each $name,
+$size in $sizes {
+    .#{$name} {
+        font-size: $size !important;
+    }
+}
+@each $name,
+$size in $bigger-sizes {
+    [class="#{$name}"] {
+        font-size: $size !important;
+    }
+}

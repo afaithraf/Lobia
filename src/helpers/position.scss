@@ -1,0 +1,29 @@
+.abs{
+    position: absolute;
+}
+.abs-t{
+    position: absolute;
+    z-index: 1;
+    top: 0;
+}
+.abs-b{
+    position: absolute;
+    z-index: 1;
+    bottom: 0;
+}
+.rel{
+    position: relative;
+}
+.fix{
+    position: fixed;
+}
+.fix-t{
+    position: fixed;
+    z-index: 1;
+    top: 0;
+}
+.fix-b{
+    position: fixed;
+    z-index: 1;
+    bottom: 0;
+}

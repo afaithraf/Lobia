@@ -1,0 +1,42 @@
+// the base font-size 
+$base-font-size: 14px;
+
+$border-radius: .4rem;
+$input-border-radius: .6rem;
+$avatar-radius: 50%;
+
+
+// breakpoints
+// ------------------------------------------
+$breakpoints: (xs: 0,
+    sm: 576px,
+    md: 768px,
+    lg: 992px,
+    xl: 1200px,
+    xxl: 1400px);
+
+// Sizing
+// ------------------------------------------
+$height-multiplier: 6; // used as height: $size*$height-multiplier
+$width-multiplier: 6; // used as width: $size*$width-multiplier
+
+$sizes: (xs: .5rem,
+    sm: .8rem,
+    md: 1rem,
+    lg: 1.2rem,
+    xl: 1.4rem,
+    xxl: 1.6rem);
+
+$bigger-sizes: ("3xl": 2rem,
+    "4xl": 2.5rem,
+    "5xl": 3rem,
+    "6xl": 3.5rem,
+    "7xl": 4rem);
+
+$other-sizes : (100: 100%,
+    75: 75%,
+    50: 50%,
+    0: 0,
+    100vh: 100vh,
+    100vw: 100vw,
+    auto: auto);

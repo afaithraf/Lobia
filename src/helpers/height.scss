@@ -1,0 +1,19 @@
+
+@each $name,
+$size in $sizes {
+    .h-#{$name} {
+            height: $size*$height-multiplier !important;
+    }
+}
+@each $name,
+$size in $bigger-sizes {
+    .h-#{$name} {
+            height: $size*$height-multiplier !important;
+    }
+}
+@each $name,
+$size in $other-sizes {
+    .h-#{$name} {
+            height: $size !important;
+    }
+}

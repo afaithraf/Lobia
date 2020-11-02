@@ -1,0 +1,9 @@
+.avatar {
+    display         : inline-block;
+    border-radius   : $avatar-radius;
+    height          : 3.4em;
+    width           : 3.4em;
+    font-size       : 1rem;
+    background      : $placeholder-color no-repeat center;
+    background-size : cover;
+}

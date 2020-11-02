@@ -1,0 +1,35 @@
+$all-sizes: map-merge($sizes, $other-sizes);
+$all-sizes: map-merge($all-sizes, $bigger-sizes);
+
+@each $name,
+$size in $all-sizes {
+    .m-#{$name} {
+        margin: $size !important;
+    }
+
+    .mx-#{$name} {
+        margin-left: $size !important;
+        margin-right: $size !important;
+    }
+
+    .ml-#{$name} {
+        margin-left: $size !important;
+    }
+
+    .mr-#{$name} {
+        margin-right: $size !important;
+    }
+
+    .my-#{$name} {
+        margin-top: $size !important;
+        margin-bottom: $size !important;
+    }
+
+    .mt-#{$name} {
+        margin-top: $size !important;
+    }
+
+    .mb-#{$name} {
+        margin-bottom: $size !important;
+    }
+}

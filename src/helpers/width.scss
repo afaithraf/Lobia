@@ -1,0 +1,19 @@
+
+@each $name,
+$size in $sizes {
+    .w-#{$name} {
+            width: $size*$width-multiplier !important;
+    }
+}
+@each $name,
+$size in $bigger-sizes {
+    .w-#{$name} {
+            width: $size*$width-multiplier !important;
+    }
+}
+@each $name,
+$size in $other-sizes {
+    .w-#{$name} {
+            width: $size !important;
+    }
+}

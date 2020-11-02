@@ -1,0 +1,21 @@
+
+// normalize
+@import "./vendor/normalize";
+
+// framework settings
+@import "./_variables";
+
+// theme options
+@import "./themes/default.theme";
+
+// styles that affect the default look
+@import "./base/_all";
+
+// reusable styles for indivudual components such as button, cards, forms...
+@import "./components/_all";
+
+// everything related to layout
+@import "./layout/_all";
+
+// usefull classes to change element style directly
+@import "./helpers/_all";

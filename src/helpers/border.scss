@@ -1,0 +1,29 @@
+.b {
+    border: 1px solid $border-base-color;
+}
+.br {
+    border-right: 1px solid $border-base-color;
+}
+.bl {
+    border-left: 1px solid $border-base-color;
+}
+.bb {
+    border-bottom: 1px solid $border-base-color;
+}
+.bt {
+    border-top: 1px solid $border-base-color;
+}
+
+@each $name,
+$color in $brand {
+    .b-#{$name} {
+        border-color: $color;
+    }
+}
+
+@each $name,
+$color in $status {
+    .b-#{$name} {
+        border-color: $color;
+    }
+}

@@ -2,7 +2,7 @@
   "name": "lobia",
   "version": "1.0.0-beta",
   "description": "Css framework built with Sass",
-  "main": "lobia.sass",
+  "main": "lobia.scss",
   "repository": "https://github.com/afaithraf/Lobia.git",
   "author": "Ashraf <54310457+afaithraf@users.noreply.github.com>",
   "license": "MIT",
@@ -11,6 +11,7 @@
     "clean-css": "^4.2.3",
     "clean-css-cli": "^4.3.0",
     "node-sass": "^4.14.1",
+    "normalize.css": "^8.0.1",
     "postcss": "^8.1.4",
     "postcss-cli": "^8.2.0",
     "rimraf": "^3.0.2"
@@ -18,14 +19,18 @@
   "scripts": {
     "watch": "yarn run build-sass --watch",
     "build": "yarn run build-sass && yarn run build-autoprefix && yarn run build-cleancss",
-    "build-sass": "node-sass --output-style expanded --source-map true lobia.sass css/lobia.css",
+    "build-sass": "node-sass --output-style expanded --source-map true lobia.scss css/lobia.css",
     "build-autoprefix": "postcss --use autoprefixer --map false --output css/lobia.css css/lobia.css",
     "build-cleancss": "cleancss -o css/lobia.min.css css/lobia.css",
     "watch-rtl": "yarn run rtl-sass --watch",
     "build-rtl": "yarn run rtl-sass && yarn run rtl-autoprefix && yarn run rtl-cleancss",
-    "rtl-sass": "node-sass --output-style expanded --source-map true lobia-rtl.sass css/lobia-rtl.css",
+    "rtl-sass": "node-sass --output-style expanded --source-map true lobia-rtl.scss css/lobia-rtl.css",
     "rtl-autoprefix": "postcss --use autoprefixer --map false --output css/lobia-rtl.css css/lobia-rtl.css",
     "rtl-cleancss": "cleancss -o css/lobia-rtl.min.css css/lobia-rtl.css",
-    "clean": "rimraf css"
+    "clean": "rimraf css && rimraf example/css",
+    "ex-watch": "node-sass --watch --output-style expanded --source-map true lobia.scss example/css/lobia.css",
+    "dev": "npm-run-all --parallel ex-watch ex-live ex-serve",
+    "ex-serve": "serve example",
+    "ex-live": "livereload example -p 6690"
   }
 }

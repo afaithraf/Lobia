@@ -1,0 +1,35 @@
+$all-sizes: map-merge($sizes, $other-sizes);
+$all-sizes: map-merge($all-sizes, $bigger-sizes);
+
+@each $name,
+$size in $all-sizes {
+    .p-#{$name} {
+        padding: $size !important;
+    }
+
+    .px-#{$name} {
+        padding-left: $size !important;
+        padding-right: $size !important;
+    }
+
+    .pl-#{$name} {
+        padding-left: $size !important;
+    }
+
+    .pr-#{$name} {
+        padding-right: $size !important;
+    }
+
+    .py-#{$name} {
+        padding-top: $size !important;
+        padding-bottom: $size !important;
+    }
+
+    .pt-#{$name} {
+        padding-top: $size !important;
+    }
+
+    .pb-#{$name} {
+        padding-bottom: $size !important;
+    }
+}
