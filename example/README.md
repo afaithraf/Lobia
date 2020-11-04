@@ -1,1 +1,0 @@
-# just an example html for testing the framework
